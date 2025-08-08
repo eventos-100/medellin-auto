@@ -44,5 +44,11 @@
   font-weight: 600;
 }
 
+.card_name.helper {
+  border-radius: 0rem;
+  outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+  outline-width: 0px;
+}
+
 #w-node-f8d3d19f-1727-0f8a-dbc5-ad99070d8651-070d8651 {
 }

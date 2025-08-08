@@ -2,10 +2,6 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
 import * as _interactions from "./interactions";
-import { MainFilterBlockHeader } from "./MainFilterBlockHeader";
-import { MainFilterBock } from "./MainFilterBock";
-import { MainFilterBlock1 } from "./MainFilterBlock1";
-import { MainFilterList } from "./MainFilterList";
 import * as _utils from "./utils";
 import _styles from "./MFormBlock.module.css";
 
@@ -117,11 +113,437 @@ export function MFormBlock({ as: _Component = _Builtin.FormWrapper }) {
           className={_utils.cx(_styles, "filter_block-2")}
           tag="div"
         >
-          <MainFilterBlockHeader />
-          <MainFilterBock />
+          <_Builtin.Block
+            className={_utils.cx(_styles, "filter_block_header-2")}
+            tag="div"
+          >
+            <_Builtin.Block
+              className={_utils.cx(_styles, "filter_block_title-6")}
+              id={_utils.cx(
+                _styles,
+                "w-node-_100f4c34-1820-d50c-c640-ebe2e8fe702a-b1ac48d6"
+              )}
+              tag="div"
+            >
+              {"Color"}
+            </_Builtin.Block>
+            <_Builtin.Link
+              className={_utils.cx(_styles, "filter_clear", "helper")}
+              button={false}
+              fs-list-element="clear"
+              fs-list-field="color"
+              block=""
+              options={{
+                href: "#",
+              }}
+            >
+              {"Clear"}
+            </_Builtin.Link>
+          </_Builtin.Block>
+          <_Builtin.Block
+            className={_utils.cx(_styles, "filter_list")}
+            tag="div"
+          >
+            <_Builtin.FormRadioWrapper
+              className={_utils.cx(
+                _styles,
+                "radio_field-2",
+                "is-list-emptyfacet",
+                "helper"
+              )}
+              fs-list-emptyfacet="add-class"
+            >
+              <_Builtin.FormRadioInput
+                className={_utils.cx(_styles, "radio_button-3", "helper")}
+                type="radio"
+                name="Color"
+                value="Radio"
+                data-name="Color"
+                required={false}
+                fs-list-field="color"
+                fs-list-value="black"
+                id="radio-16"
+                form={{
+                  type: "radio-input",
+                  name: "Color",
+                }}
+                inputType="custom"
+                customClassName="w-form-formradioinput--inputType-custom"
+              />
+              <_Builtin.Block
+                className={_utils.cx(_styles, "radio_color", "is-black")}
+                tag="div"
+              />
+              <_Builtin.FormInlineLabel
+                className={_utils.cx(_styles, "radio_label")}
+              >
+                {"Black"}
+              </_Builtin.FormInlineLabel>
+              <_Builtin.Block
+                className={_utils.cx(_styles, "filter_facet-count", "helper")}
+                tag="div"
+                fs-list-element="facet-count"
+              >
+                {"0"}
+              </_Builtin.Block>
+              <_Builtin.Block
+                className={_utils.cx(_styles, "option-results-2")}
+                tag="div"
+              >
+                {"["}
+                <_Builtin.Span fs-cmsfilter-element="filter-results-count">
+                  {"0"}
+                </_Builtin.Span>
+                {"]"}
+              </_Builtin.Block>
+            </_Builtin.FormRadioWrapper>
+            <_Builtin.FormRadioWrapper
+              className={_utils.cx(_styles, "radio_field-2", "helper")}
+              fs-list-emptyfacet="add-class"
+            >
+              <_Builtin.FormRadioInput
+                className={_utils.cx(_styles, "radio_button-3", "helper")}
+                type="radio"
+                name="Color"
+                value="Radio"
+                data-name="Color"
+                required={false}
+                fs-list-field="color"
+                fs-list-value="white"
+                id="radio-16"
+                form={{
+                  type: "radio-input",
+                  name: "Color",
+                }}
+                inputType="custom"
+                customClassName="w-form-formradioinput--inputType-custom"
+              />
+              <_Builtin.Block
+                className={_utils.cx(_styles, "radio_color", "is-white")}
+                tag="div"
+              />
+              <_Builtin.FormInlineLabel
+                className={_utils.cx(_styles, "radio_label")}
+              >
+                {"White"}
+              </_Builtin.FormInlineLabel>
+              <_Builtin.Block
+                className={_utils.cx(_styles, "filter_facet-count", "helper")}
+                tag="div"
+                fs-list-element="facet-count"
+              >
+                {"0"}
+              </_Builtin.Block>
+            </_Builtin.FormRadioWrapper>
+            <_Builtin.FormRadioWrapper
+              className={_utils.cx(_styles, "radio_field-2", "helper")}
+              fs-list-emptyfacet="add-class"
+            >
+              <_Builtin.FormRadioInput
+                className={_utils.cx(_styles, "radio_button-3", "helper")}
+                type="radio"
+                name="Color"
+                value="Radio"
+                data-name="Color"
+                required={false}
+                fs-list-field="color"
+                fs-list-value="gray"
+                id="radio-16"
+                form={{
+                  type: "radio-input",
+                  name: "Color",
+                }}
+                inputType="custom"
+                customClassName="w-form-formradioinput--inputType-custom"
+              />
+              <_Builtin.Block
+                className={_utils.cx(_styles, "radio_color", "is-gray")}
+                tag="div"
+              />
+              <_Builtin.FormInlineLabel
+                className={_utils.cx(_styles, "radio_label")}
+              >
+                {"Gray "}
+              </_Builtin.FormInlineLabel>
+              <_Builtin.Block
+                className={_utils.cx(_styles, "filter_facet-count", "helper")}
+                tag="div"
+                fs-list-element="facet-count"
+              >
+                {"0"}
+              </_Builtin.Block>
+            </_Builtin.FormRadioWrapper>
+            <_Builtin.FormRadioWrapper
+              className={_utils.cx(_styles, "radio_field-2", "helper")}
+              id={_utils.cx(
+                _styles,
+                "w-node-_99a7c7ca-cc3a-9291-0d8f-797d4a5488da-b1ac48d6"
+              )}
+              fs-list-emptyfacet="add-class"
+            >
+              <_Builtin.FormRadioInput
+                className={_utils.cx(_styles, "radio_button-3")}
+                type="radio"
+                name="Color"
+                value="Radio"
+                data-name="Color"
+                required={false}
+                fs-list-field="color"
+                fs-list-value="cream"
+                id="radio-16"
+                form={{
+                  type: "radio-input",
+                  name: "Color",
+                }}
+                inputType="custom"
+                customClassName="w-form-formradioinput--inputType-custom"
+              />
+              <_Builtin.Block
+                className={_utils.cx(_styles, "radio_color", "is-cream")}
+                tag="div"
+              />
+              <_Builtin.FormInlineLabel
+                className={_utils.cx(_styles, "radio_label")}
+              >
+                {"Cream"}
+              </_Builtin.FormInlineLabel>
+              <_Builtin.Block
+                className={_utils.cx(_styles, "filter_facet-count", "helper")}
+                tag="div"
+                fs-list-element="facet-count"
+              >
+                {"0"}
+              </_Builtin.Block>
+            </_Builtin.FormRadioWrapper>
+            <_Builtin.FormRadioWrapper
+              className={_utils.cx(_styles, "radio_field-2", "helper")}
+              fs-list-emptyfacet="add-class"
+            >
+              <_Builtin.FormRadioInput
+                className={_utils.cx(_styles, "radio_button-3")}
+                type="radio"
+                name="Color"
+                value="Radio"
+                data-name="Color"
+                required={false}
+                fs-list-field="color"
+                fs-list-value="yellow"
+                id="radio-16"
+                form={{
+                  type: "radio-input",
+                  name: "Color",
+                }}
+                inputType="custom"
+                customClassName="w-form-formradioinput--inputType-custom"
+              />
+              <_Builtin.Block
+                className={_utils.cx(_styles, "radio_color", "is-yellow")}
+                tag="div"
+              />
+              <_Builtin.FormInlineLabel
+                className={_utils.cx(_styles, "radio_label")}
+              >
+                {"Yellow"}
+              </_Builtin.FormInlineLabel>
+              <_Builtin.Block
+                className={_utils.cx(_styles, "filter_facet-count", "helper")}
+                tag="div"
+                fs-list-element="facet-count"
+              >
+                {"0"}
+              </_Builtin.Block>
+            </_Builtin.FormRadioWrapper>
+            <_Builtin.FormRadioWrapper
+              className={_utils.cx(_styles, "radio_field-2", "helper")}
+              fs-list-emptyfacet="add-class"
+            >
+              <_Builtin.FormRadioInput
+                className={_utils.cx(_styles, "radio_button-3")}
+                type="radio"
+                name="Color"
+                value="Radio"
+                data-name="Color"
+                required={false}
+                fs-list-field="color"
+                fs-list-value="red"
+                id="radio-16"
+                form={{
+                  type: "radio-input",
+                  name: "Color",
+                }}
+                inputType="custom"
+                customClassName="w-form-formradioinput--inputType-custom"
+              />
+              <_Builtin.Block
+                className={_utils.cx(_styles, "radio_color", "red")}
+                tag="div"
+              />
+              <_Builtin.FormInlineLabel
+                className={_utils.cx(_styles, "radio_label")}
+              >
+                {"Red"}
+              </_Builtin.FormInlineLabel>
+              <_Builtin.Block
+                className={_utils.cx(_styles, "filter_facet-count", "helper")}
+                tag="div"
+                fs-list-element="facet-count"
+              >
+                {"0"}
+              </_Builtin.Block>
+            </_Builtin.FormRadioWrapper>
+            <_Builtin.FormRadioWrapper
+              className={_utils.cx(_styles, "radio_field-2", "helper")}
+              fs-list-emptyfacet="add-class"
+            >
+              <_Builtin.FormRadioInput
+                className={_utils.cx(_styles, "radio_button-3")}
+                type="radio"
+                name="Color"
+                value="Radio"
+                data-name="Color"
+                required={false}
+                fs-list-field="color"
+                fs-list-value="green"
+                id="radio-16"
+                form={{
+                  type: "radio-input",
+                  name: "Color",
+                }}
+                inputType="custom"
+                customClassName="w-form-formradioinput--inputType-custom"
+              />
+              <_Builtin.Block
+                className={_utils.cx(_styles, "radio_color", "is-green")}
+                tag="div"
+              />
+              <_Builtin.FormInlineLabel
+                className={_utils.cx(_styles, "radio_label")}
+              >
+                {"Green"}
+              </_Builtin.FormInlineLabel>
+              <_Builtin.Block
+                className={_utils.cx(_styles, "filter_facet-count", "helper")}
+                tag="div"
+                fs-list-element="facet-count"
+              >
+                {"0"}
+              </_Builtin.Block>
+            </_Builtin.FormRadioWrapper>
+          </_Builtin.Block>
+          <_Builtin.Block
+            className={_utils.cx(_styles, "filter_block-2")}
+            tag="div"
+          >
+            <_Builtin.Block
+              className={_utils.cx(_styles, "filter_block_header-2")}
+              tag="div"
+            >
+              <_Builtin.Block
+                className={_utils.cx(_styles, "filter_block_title-6")}
+                id={_utils.cx(
+                  _styles,
+                  "w-node-a6fcb1b8-729c-1b73-3943-58991a1ad9e8-b1ac48d6"
+                )}
+                tag="div"
+              >
+                {"Makes"}
+              </_Builtin.Block>
+              <_Builtin.Link
+                className={_utils.cx(_styles, "filter_clear", "helper")}
+                button={false}
+                fs-list-element="clear"
+                fs-list-field="make"
+                block=""
+                options={{
+                  href: "#",
+                }}
+              >
+                {"Clear"}
+              </_Builtin.Link>
+            </_Builtin.Block>
+            <_Builtin.NotSupported _atom="DynamoWrapper" />
+          </_Builtin.Block>
         </_Builtin.Block>
-        <MainFilterBlock1 />
-        <MainFilterList />
+        <_Builtin.Block
+          className={_utils.cx(_styles, "filter_block-2")}
+          id={_utils.cx(
+            _styles,
+            "w-node-e99898cf-aeaa-e546-eabd-a9fd8d8b4932-b1ac48d6"
+          )}
+          tag="div"
+        >
+          <_Builtin.Block
+            className={_utils.cx(_styles, "filter_block_header-2")}
+            tag="div"
+          >
+            <_Builtin.Heading
+              className={_utils.cx(_styles, "filter-block-label")}
+              tag="h3"
+            >
+              {"Year"}
+            </_Builtin.Heading>
+            <_Builtin.Link
+              className={_utils.cx(_styles, "filter_clear", "helper")}
+              button={false}
+              fs-list-element="clear"
+              fs-list-field="year"
+              block=""
+              options={{
+                href: "#",
+              }}
+            >
+              {"Clear"}
+            </_Builtin.Link>
+          </_Builtin.Block>
+          <_Builtin.Block
+            className={_utils.cx(_styles, "filter_list", "is-1-col")}
+            tag="div"
+          >
+            <_Builtin.FormSelect
+              className={_utils.cx(_styles, "filter_select-2", "helper")}
+              name="select"
+              data-name="select"
+              required={false}
+              multiple={false}
+              fs-list-field="year"
+              id="select"
+              options={[
+                {
+                  t: "Select a year",
+                  v: "",
+                },
+                {
+                  t: "2018",
+                  v: "2018",
+                },
+                {
+                  t: "2019",
+                  v: "2019",
+                },
+                {
+                  t: "2020",
+                  v: "2020",
+                },
+                {
+                  t: "2021",
+                  v: "2021",
+                },
+                {
+                  t: "2022",
+                  v: "2022",
+                },
+                {
+                  t: "2023",
+                  v: "2023",
+                },
+                {
+                  t: "2024",
+                  v: "2024",
+                },
+              ]}
+            />
+          </_Builtin.Block>
+        </_Builtin.Block>
         <_Builtin.Block
           className={_utils.cx(_styles, "filter_block-2")}
           tag="div"

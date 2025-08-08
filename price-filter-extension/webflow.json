@@ -1,0 +1,24 @@
+{
+  "name": "Price Filter Creator",
+  "version": "1.0.0",
+  "description": "Creates price filter components",
+  "main": "src/index.html",
+  "type": "extension",
+  "entrypoints": {
+    "designer": {
+      "file": "src/index.html",
+      "width": 400,
+      "height": 600
+    }
+  },
+  "permissions": [
+    "element:create",
+    "element:read", 
+    "element:write",
+    "style:create",
+    "style:read",
+    "style:write",
+    "component:create",
+    "component:read"
+  ]
+}

@@ -44,3 +44,9 @@
 .filter_clear-all:hover {
   background-color: #4c4c4c;
 }
+
+.filter_clear-all.helper {
+  border-radius: 0rem;
+  background-color: #e0e0e0;
+  outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+}

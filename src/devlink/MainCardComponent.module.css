@@ -43,22 +43,6 @@
   }
 }
 
-.card_location {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  color: #747474;
-  font-size: 0.8rem;
-}
-
-.helper {
-  border-radius: 0.25rem;
-  outline-color: #00e4ff;
-  outline-offset: 3px;
-  outline-style: solid;
-  outline-width: 1px;
-}
-
 .card_model {
   display: flex;
   grid-column-gap: 0.25rem;
@@ -69,6 +53,20 @@
 .card_name {
   font-size: 1.25rem;
   font-weight: 600;
+}
+
+.card_name.helper {
+  border-radius: 0rem;
+  outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+  outline-width: 0px;
+}
+
+.helper {
+  border-radius: 0.25rem;
+  outline-color: #00e4ff;
+  outline-offset: 3px;
+  outline-style: solid;
+  outline-width: 1px;
 }
 
 .card_image_wrapper {
@@ -159,6 +157,14 @@
   }
 }
 
+.card_info.helper {
+  border-radius: 0rem;
+  opacity: 0.74;
+  outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+  outline-offset: 0px;
+  outline-width: 0px;
+}
+
 .featured_embed {
   display: none;
 }
@@ -171,6 +177,13 @@
 .card_price_text {
   line-height: 1;
   font-weight: 600;
+}
+
+.card_price_text.helper {
+  border-radius: 0rem;
+  outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+  outline-offset: 0px;
+  outline-width: 0px;
 }
 
 #w-node-_4c60e83f-0795-5d73-7dba-af97b44670fe-b44670fd {

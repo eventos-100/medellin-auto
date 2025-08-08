@@ -71,6 +71,12 @@
   font-weight: 600;
 }
 
+.card_name.helper {
+  border-radius: 0rem;
+  outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+  outline-width: 0px;
+}
+
 .card_image_wrapper {
   position: relative;
   overflow: clip;
@@ -159,6 +165,14 @@
   }
 }
 
+.card_info.helper {
+  border-radius: 0rem;
+  opacity: 0.74;
+  outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+  outline-offset: 0px;
+  outline-width: 0px;
+}
+
 .featured_embed {
   display: none;
 }
@@ -171,6 +185,13 @@
 .card_price_text {
   line-height: 1;
   font-weight: 600;
+}
+
+.card_price_text.helper {
+  border-radius: 0rem;
+  outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+  outline-offset: 0px;
+  outline-width: 0px;
 }
 
 #w-node-_7f85e3a8-c432-f83f-9972-65762bda09ed-2bda09ec {

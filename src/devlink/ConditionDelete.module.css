@@ -1,0 +1,55 @@
+.condition_delete {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: #111;
+}
+
+.condition_add {
+  padding: 0.5rem;
+  background-color: transparent;
+  color: #a1a1a1;
+  text-decoration: none;
+}
+
+.helper {
+  border-radius: 0.25rem;
+  outline-color: #00e4ff;
+  outline-offset: 3px;
+  outline-style: solid;
+  outline-width: 1px;
+}
+
+.condition_remove {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 0 0 auto;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+
+  border-radius: 0.25rem;
+
+  background-color: transparent;
+
+  color: #a1a1a1;
+  text-decoration: none;
+}
+
+.condition_remove.is-list-dynamic-disabled {
+  opacity: 0.3;
+}
+
+.condition_remove-icon {
+  display: flex;
+  width: 1.125rem;
+  flex-direction: column;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.condition_remove-icon:hover {
+  opacity: 0.65;
+}

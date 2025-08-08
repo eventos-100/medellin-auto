@@ -50,6 +50,14 @@
   background-color: #4c4c4c;
 }
 
+.filter_clear.helper {
+  border-radius: 0rem;
+  background-color: #0166b1;
+  outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+  outline-offset: 0px;
+  outline-width: 0px;
+}
+
 .helper {
   border-radius: 0.25rem;
   outline-color: #00e4ff;

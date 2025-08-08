@@ -2,6 +2,10 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
 import * as _interactions from "./interactions";
+import { SelectField } from "./SelectField";
+import { Condition } from "./Condition";
+import { Value } from "./Value";
+import { ConditionDelete } from "./ConditionDelete";
 import * as _utils from "./utils";
 import _styles from "./FormBlock.module.css";
 
@@ -129,143 +133,13 @@ export function FormBlock({ as: _Component = _Builtin.FormWrapper }) {
                     tag="div"
                     fs-list-element="condition"
                   >
-                    <_Builtin.FormSelect
-                      className={_utils.cx(
-                        _styles,
-                        "condition_select",
-                        "helper"
-                      )}
-                      name="Condition-Field"
-                      data-name="Condition Field"
-                      required={false}
-                      multiple={false}
-                      fs-list-element="condition-field"
-                      id="Condition-Field"
-                      options={[
-                        {
-                          t: "Select field",
-                          v: "",
-                        },
-                        {
-                          t: "Name",
-                          v: "name",
-                        },
-                        {
-                          t: "Make",
-                          v: "make",
-                        },
-                        {
-                          t: "Color",
-                          v: "color",
-                        },
-                        {
-                          t: "Year",
-                          v: "year",
-                        },
-                        {
-                          t: "Price",
-                          v: "price",
-                        },
-                      ]}
-                    />
-                    <_Builtin.FormSelect
-                      className={_utils.cx(
-                        _styles,
-                        "condition_select",
-                        "helper"
-                      )}
-                      name="Condition-Operator"
-                      data-name="Condition Operator"
-                      required={false}
-                      multiple={false}
-                      fs-list-element="condition-operator"
-                      id="Condition-Operator"
-                      options={[
-                        {
-                          t: "Is equal to",
-                          v: "equal",
-                        },
-                        {
-                          t: "Is not equal to",
-                          v: "not-equal",
-                        },
-                        {
-                          t: "Contains",
-                          v: "contain",
-                        },
-                        {
-                          t: "Does not contain",
-                          v: "not-contain",
-                        },
-                        {
-                          t: "Starts with",
-                          v: "start",
-                        },
-                        {
-                          t: "Is greater than",
-                          v: "greater",
-                        },
-                        {
-                          t: "Is greater or equal than",
-                          v: "greater-equal",
-                        },
-                        {
-                          t: "Is less than",
-                          v: "less",
-                        },
-                        {
-                          t: "Is less or equal than",
-                          v: "less-equal",
-                        },
-                        {
-                          t: "Any contains",
-                          v: "contain",
-                        },
-                        {
-                          t: "All contain",
-                          v: "contain",
-                        },
-                        {
-                          t: "Is before",
-                          v: "less",
-                        },
-                        {
-                          t: "Is after",
-                          v: "greater",
-                        },
-                        {
-                          t: "Is empty",
-                          v: "empty",
-                        },
-                        {
-                          t: "Is not empty",
-                          v: "not-empty",
-                        },
-                      ]}
-                    />
+                    <SelectField />
+                    <Condition />
                     <_Builtin.Block
                       className={_utils.cx(_styles, "condition_column")}
                       tag="div"
                     >
-                      <_Builtin.FormSelect
-                        className={_utils.cx(
-                          _styles,
-                          "condition_select",
-                          "helper"
-                        )}
-                        name="Select-Value"
-                        data-name="Select Value"
-                        required={false}
-                        multiple={false}
-                        fs-list-element="condition-value"
-                        id="Select-Value"
-                        options={[
-                          {
-                            t: "Select a value",
-                            v: "",
-                          },
-                        ]}
-                      />
+                      <Value />
                       <_Builtin.FormTextInput
                         className={_utils.cx(
                           _styles,
@@ -310,47 +184,7 @@ export function FormBlock({ as: _Component = _Builtin.FormWrapper }) {
                   </_Builtin.Block>
                 </_Builtin.Block>
               </_Builtin.Block>
-              <_Builtin.Block
-                className={_utils.cx(_styles, "condition_delete")}
-                tag="div"
-              >
-                <_Builtin.Link
-                  className={_utils.cx(_styles, "condition_add", "helper")}
-                  button={false}
-                  fs-list-element="condition-add"
-                  block=""
-                  options={{
-                    href: "#",
-                  }}
-                >
-                  {"+Add condition"}
-                </_Builtin.Link>
-                <_Builtin.Link
-                  className={_utils.cx(
-                    _styles,
-                    "condition_remove",
-                    "is-list-dynamic-disabled",
-                    "helper"
-                  )}
-                  button={false}
-                  fs-list-element="condition-group-remove"
-                  block="inline"
-                  options={{
-                    href: "#",
-                  }}
-                >
-                  <_Builtin.Image
-                    className={_utils.cx(_styles, "condition_remove-icon")}
-                    width="auto"
-                    height="auto"
-                    loading="lazy"
-                    fs-list-element="condition-remove"
-                    alt=""
-                    src="https://cdn.prod.website-files.com/687bbc3b0bb3dd57d6c1fd83/688f62eea430a310531c89d9_delete-icon.svg"
-                  />
-                  <_Builtin.Block tag="div">{"Remove group"}</_Builtin.Block>
-                </_Builtin.Link>
-              </_Builtin.Block>
+              <ConditionDelete />
             </_Builtin.Block>
           </_Builtin.Block>
         </_Builtin.Block>

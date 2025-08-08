@@ -15,6 +15,13 @@
   border-radius: 0.375rem;
 }
 
+.filter_form-3.helper {
+  border-radius: 0rem;
+  outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+  outline-offset: 0px;
+  outline-width: 0px;
+}
+
 .helper {
   border-radius: 0.25rem;
   outline-color: #00e4ff;
@@ -34,7 +41,7 @@
 
   border-radius: 0.25rem;
 
-  background-color: #242424;
+  background-color: #e0e0e0;
 }
 
 .hide {
@@ -56,6 +63,18 @@
 
   color: #b9fd3b;
   font-size: 1rem;
+}
+
+.filter_search.helper {
+  border-radius: 0rem;
+
+  background-color: #e0e0e0;
+
+  outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+  outline-offset: 1px;
+  outline-width: 1px;
+
+  color: hsla(81.03092783505154, 5.64%, 24.16%, 1.00);
 }
 
 .filter_block_header {

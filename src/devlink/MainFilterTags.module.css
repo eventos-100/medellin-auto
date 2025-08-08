@@ -57,6 +57,20 @@
   background-color: #4c4c4c;
 }
 
+.filter_tags_item.helper {
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsla(0, 0.00%, 100.00%, 1.00);
+  border-radius: 0rem;
+
+  background-color: #e0e0e0;
+
+  outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+  outline-offset: 1px;
+
+  color: hsla(0, 0.00%, 0.00%, 1.00);
+}
+
 .helper {
   border-radius: 0.25rem;
   outline-color: #00e4ff;
@@ -67,6 +81,13 @@
 
 .filter_tags_text {
   text-transform: capitalize;
+}
+
+.filter_tags_text.helper {
+  border-radius: 0rem;
+  outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+  outline-offset: 0px;
+  outline-width: 0px;
 }
 
 .filter_tags_remove {
@@ -86,4 +107,11 @@
   border-radius: 999rem;
 
   cursor: pointer;
+}
+
+.filter_tags_remove.helper {
+  border-radius: 0rem;
+  outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+  outline-offset: 0px;
+  outline-width: 0px;
 }

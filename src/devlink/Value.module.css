@@ -1,0 +1,15 @@
+.condition_select {
+  margin-bottom: 0px;
+  border: 1px none black;
+  border-radius: 0.25rem;
+  background-color: #5a5a5a;
+  color: #c5c5c5;
+}
+
+.helper {
+  border-radius: 0.25rem;
+  outline-color: #00e4ff;
+  outline-offset: 3px;
+  outline-style: solid;
+  outline-width: 1px;
+}

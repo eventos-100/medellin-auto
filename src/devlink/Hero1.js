@@ -2,9 +2,9 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
 import * as _utils from "./utils";
-import _styles from "./Cta1.module.css";
+import _styles from "./Hero1.module.css";
 
-export function Cta1({ as: _Component = _Builtin.Block }) {
+export function Hero1({ as: _Component = _Builtin.Block }) {
   return (
     <_Component className={_utils.cx(_styles, "section-subscribe")} tag="div">
       <_Builtin.Image

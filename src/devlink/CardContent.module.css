@@ -72,6 +72,14 @@
   }
 }
 
+.card_info.helper {
+  border-radius: 0rem;
+  opacity: 0.74;
+  outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+  outline-offset: 0px;
+  outline-width: 0px;
+}
+
 .helper {
   border-radius: 0.25rem;
   outline-color: #00e4ff;
@@ -92,6 +100,13 @@
 .card_price_text {
   line-height: 1;
   font-weight: 600;
+}
+
+.card_price_text.helper {
+  border-radius: 0rem;
+  outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+  outline-offset: 0px;
+  outline-width: 0px;
 }
 
 #w-node-_984a2ce4-27e7-7d0b-c42c-f401711becb0-711beca6 {

@@ -9,7 +9,7 @@
 
   border-radius: 0.25rem;
 
-  background-color: #242424;
+  background-color: #e0e0e0;
 }
 
 .hide {
@@ -66,6 +66,14 @@
 
 .filter_clear:hover {
   background-color: #4c4c4c;
+}
+
+.filter_clear.helper {
+  border-radius: 0rem;
+  background-color: #0166b1;
+  outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+  outline-offset: 0px;
+  outline-width: 0px;
 }
 
 .helper {
@@ -155,9 +163,16 @@
   outline-width: 2px;
 }
 
+.radio_button-3.helper {
+  border-width: 1px;
+  border-radius: 0rem;
+  outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+}
+
 .radio_label {
   margin-right: 0.5rem;
   margin-bottom: 0px;
+  color: hsla(0, 0.00%, 0.00%, 1.00);
 }
 
 .option-results-2 {

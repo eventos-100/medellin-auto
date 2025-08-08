@@ -23,26 +23,6 @@ export function MainCardComponent({
         )}
         tag="div"
       >
-        <_Builtin.Block
-          className={_utils.cx(_styles, "card_location")}
-          tag="div"
-        >
-          <_Builtin.Block
-            className={_utils.cx(_styles, "card_text", "helper")}
-            tag="div"
-            fs-list-field="city"
-          >
-            {"This is some text inside of a div block."}
-          </_Builtin.Block>
-          <_Builtin.Block tag="div">{","}</_Builtin.Block>
-          <_Builtin.Block
-            className={_utils.cx(_styles, "card_text", "helper")}
-            tag="div"
-            fs-list-field="state"
-          >
-            {"This is some text inside of a div block."}
-          </_Builtin.Block>
-        </_Builtin.Block>
         <_Builtin.Block className={_utils.cx(_styles, "card_model")} tag="div">
           <_Builtin.Block
             className={_utils.cx(_styles, "card_name", "helper")}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Price Filter Creator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 350px;
+        }
+        .step {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .step h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        button {
+            background: #4f46e5;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #3730a3;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .success {
+            background: #10b981;
+        }
+        .error {
+            background: #ef4444;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .log {
+            background: #f3f4f6;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-family: monospace;
+            font-size: 12px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🎯 Price Filter Creator</h2>
+        
+        <div class="step">
+            <h3>Step 1: Verify API</h3>
+            <button id="verify-api">Check Webflow API</button>
+            <div id="api-status"></div>
+        </div>
+        
+        <div class="step">
+            <h3>Step 2: Create Component</h3>
+            <button id="create-component" disabled>Create Price Filter Component</button>
+            <div id="create-status"></div>
+        </div>
+        
+        <div class="step">
+            <h3>Step 3: Verify Component</h3>
+            <button id="verify-component" disabled>Check Component in Navigator</button>
+            <div id="verify-status"></div>
+        </div>
+        
+        <div class="step">
+            <h3>Step 4: Add to Page</h3>
+            <button id="add-to-page" disabled>Add Component to Current Page</button>
+            <div id="add-status"></div>
+        </div>
+        
+        <div id="log" class="log" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

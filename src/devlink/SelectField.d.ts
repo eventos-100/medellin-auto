@@ -1,5 +1,5 @@
 import * as React from "react";
 
-declare function FilterResults(props: {
+declare function SelectField(props: {
   as?: React.ElementType;
 }): React.JSX.Element;
