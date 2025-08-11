@@ -11,12 +11,11 @@
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio"
+    "db:apply:local": "wrangler d1 migrations apply DB --local"
   },
   "dependencies": {
     "@opennextjs/cloudflare": "^1.0.0",
-    "drizzle-orm": "^0.33.0",
+    "drizzle-orm": "^0.44.4",
     "next": "^14.2.31",
     "react": "18.3.1",
     "react-dom": "18.3.1"
@@ -26,11 +25,13 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "better-sqlite3": "^12.2.0",
     "drizzle-kit": "^0.31.4",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.8",
     "postcss-import": "^16.1.0",
     "tailwindcss": "^4",
+    "tsx": "^4.20.3",
     "typescript": "^5",
     "wrangler": "^4.11.1"
   }

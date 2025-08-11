@@ -7,7 +7,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 
-  border-radius: 0.25rem;
+  border-radius: 0rem;
 
   background-color: #e0e0e0;
 }
@@ -93,7 +93,10 @@
 
 .rangeslider_wrapper-2.helper {
   border-radius: 0rem;
+  background-color: #fffefe;
   outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
+  outline-offset: 0px;
+  outline-width: 0px;
 }
 
 .rangeslider_track-2 {
@@ -149,5 +152,5 @@
   align-items: center;
 }
 
-#w-node-_107bed87-b318-af6b-e709-2c6002241ad4-02241ad2 {
+#w-node-_41af4576-9ae0-eeeb-ed5a-ce1402921afc-02921afa {
 }

@@ -71,6 +71,9 @@
 }
 
 .checkbox_input-2.helper {
+  border-width: 0px;
+  outline-offset: 1px;
+  outline-width: 1px;
   color: var(--black);
   font-weight: 700;
 }

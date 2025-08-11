@@ -1,33 +1,16 @@
 import type { NextConfig } from "next";
+import userConfig from './clouduser.next.config';
 
-const nextConfig: NextConfig = {
+const webflowOverrides: NextConfig = {
   basePath: "/app",
-  assetPrefix: "/app",
-  typescript: {
-    ignoreBuildErrors: false,
-  },
-  eslint: {
-    ignoreDuringBuilds: false,
-  },
-  images: {
-    unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'assets.webflow.com',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'uploads-ssl.webflow.com',
-        pathname: '/**',
-      },
-    ],
-  },
+  assetPrefix: "https://1acebdd5-0f03-416a-8aa1-ebdfbcfb9986.wf-app-prod.cosmic.webflow.services/app",
 };
 
-export default nextConfig;
+for (const [key, value] of Object.entries(webflowOverrides)) {
+  userConfig[key] = value;
+}
 
-// Initialize OpenNext for Cloudflare
+export default userConfig;
+
 import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
 initOpenNextCloudflareForDev();

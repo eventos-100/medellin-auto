@@ -59,7 +59,7 @@
 
 .filter_tags_item.helper {
   border-style: solid;
-  border-width: 1px;
+  border-width: 0px;
   border-color: hsla(0, 0.00%, 100.00%, 1.00);
   border-radius: 0rem;
 

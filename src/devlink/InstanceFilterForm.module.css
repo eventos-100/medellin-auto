@@ -39,7 +39,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 
-  border-radius: 0.25rem;
+  border-radius: 0rem;
 
   background-color: #e0e0e0;
 }
@@ -221,6 +221,10 @@
   outline-width: 0px;
 }
 
+.checkbox_field-2.is-list-emptyfacet.helper {
+  opacity: 13;
+}
+
 .checkbox_input-2 {
   width: 1.25rem;
   height: 1.25rem;
@@ -258,6 +262,9 @@
 }
 
 .checkbox_input-2.helper {
+  border-width: 0px;
+  outline-offset: 1px;
+  outline-width: 1px;
   color: var(--black);
   font-weight: 700;
 }

@@ -2,9 +2,9 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
 import * as _utils from "./utils";
-import _styles from "./Price.module.css";
+import _styles from "./PriceSlide.module.css";
 
-export function Price({ as: _Component = _Builtin.Block }) {
+export function PriceSlide({ as: _Component = _Builtin.Block }) {
   return (
     <_Component className={_utils.cx(_styles, "filter_block-2")} tag="div">
       <_Builtin.Block
@@ -15,7 +15,7 @@ export function Price({ as: _Component = _Builtin.Block }) {
           className={_utils.cx(_styles, "filter_block_title-6")}
           id={_utils.cx(
             _styles,
-            "w-node-_107bed87-b318-af6b-e709-2c6002241ad4-02241ad2"
+            "w-node-_41af4576-9ae0-eeeb-ed5a-ce1402921afc-02921afa"
           )}
           tag="div"
         >

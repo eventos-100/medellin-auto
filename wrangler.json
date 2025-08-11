@@ -10,5 +10,19 @@
   },
   "observability": {
     "enabled": true
-  }
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "cars",
+      "database_id": "will-be-generated-on-deploy",
+      "migrations_dir": "drizzle"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "FILTER_CACHE",
+      "id": "will-be-generated-on-deploy"
+    }
+  ]
 }

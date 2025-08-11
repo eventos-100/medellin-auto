@@ -69,6 +69,7 @@
 }
 
 .filter_dropdown.helper {
+  border-radius: 0rem;
   outline-color: hsla(186.3529411764706, 0.00%, 0.00%, 1.00);
 }
 
@@ -80,7 +81,7 @@
   justify-content: flex-start;
   align-items: center;
 
-  border-radius: 0.25rem;
+  border-radius: 0rem;
 
   background-color: #e0e0e0;
 

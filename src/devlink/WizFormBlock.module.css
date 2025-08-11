@@ -39,7 +39,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 
-  border-radius: 0.25rem;
+  border-radius: 0rem;
 
   background-color: #e0e0e0;
 }
